@@ -157,7 +157,7 @@ def user_stats(df):
     except:
         print('There are is not gender data for Washington.') 
 
-    # TO DO: Display earliest, most recent, and most common year of birth
+    # TO DO: Display earliest, most recent, and most common year of birth (Washington has no age data).
     try:
         Earliest_birthday = df['Birth Year'].min()
         print('The earliest birthday is ', Earliest_birthday)
