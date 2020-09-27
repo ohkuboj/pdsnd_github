@@ -150,7 +150,7 @@ def user_stats(df):
     Total_User_Type = df['User Type'].nunique()
     print('The total # of users types are :', Total_User_Type)
 
-    # TO DO: Display counts of gender
+    # TO DO: Display counts of gender (Washington does not have gender data)
     try:
         Total_Genders = df['Gender'].nunique()
         print('The total # of gender types are :', Total_Genders)
