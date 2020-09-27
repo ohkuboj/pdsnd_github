@@ -21,7 +21,7 @@ def get_filters():
     (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # get user input for city (chicago, new york city, washington). In current set-up, user cannot select 'all' cities. HINT: Use a while loop to handle invalid inputs
     try:
         city = input('Please enter a city: chicago, new york city or washington.').lower()       
         while (city not in city_names):
@@ -152,14 +152,14 @@ def user_stats(df):
     Total_User_Type = df['User Type'].nunique()
     print('The total # of users types are :', Total_User_Type)
 
-    # TO DO: Display counts of gender
+    # TO DO: Display counts of gender (Washington does not have gender data)
     try:
         Total_Genders = df['Gender'].nunique()
         print('The total # of gender types are :', Total_Genders)
     except:
         print('There are is not gender data for Washington.') 
 
-    # TO DO: Display earliest, most recent, and most common year of birth
+    # TO DO: Display earliest, most recent, and most common year of birth (Washington has no age data).
     try:
         Earliest_birthday = df['Birth Year'].min()
         print('The earliest birthday is ', Earliest_birthday)
