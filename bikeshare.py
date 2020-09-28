@@ -4,6 +4,7 @@ import numpy as np
 
 #Washington has no age data.
 #Washington has no gender data.
+#User cannot run data for all cities at one-time.
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
