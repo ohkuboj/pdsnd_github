@@ -8,7 +8,7 @@ Replace the Project Title
 
 ### Description
 Describe what your project is about and what it does
-Project breaks down large sets of bikeshare data collected from Chicago, New York City, and Washington.
+Project breaks down large sets of bikeshare data collected from Chicago, New York City, and Washington. The user is able to choose which cities and dates they'd like to understand.
 
 ### Files used
 Include the files used
