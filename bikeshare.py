@@ -2,7 +2,9 @@ import time
 import pandas as pd
 import numpy as np
 
-#below includes bikeshare customer data from Chicago, New York City, and Washington. These are cities in the USA.
+#Washington has no age data.
+#Washington has no gender data.
+#User cannot run data for all cities at one-time.
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -23,7 +25,7 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). In current set-up, user cannot select 'all' cities. HINT: Use a while loop to handle invalid inputs
     try:
-        city = input('Please enter a city: chicago, new york city or washington.').lower()       
+        city = input('Please enter a city: chicago, new york city or washington.').lower()
         while (city not in city_names):
             print("You entered an invalid ", city, " please try again")
             sys.exit(1)
@@ -41,7 +43,7 @@ def get_filters():
     except:
         print("error - you entered an invalid month - script will now end")
         quit()
-        
+
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     try:
         day = input('Please enter a day: all, monday, tuesday, ... sunday.').lower()
@@ -157,16 +159,16 @@ def user_stats(df):
         Total_Genders = df['Gender'].nunique()
         print('The total # of gender types are :', Total_Genders)
     except:
-        print('There are is not gender data for Washington.') 
+        print('There are is not gender data for Washington.')
 
     # TO DO: Display earliest, most recent, and most common year of birth (Washington has no age data).
     try:
         Earliest_birthday = df['Birth Year'].min()
         print('The earliest birthday is ', Earliest_birthday)
-        
+
         Latest_birthday = df['Birth Year'].max()
         print('The latest birthday is ', Latest_birthday)
-        
+
         Most_common_birthday = df['Birth Year'].mode()[0]
         print('The most common birthday is ', Most_common_birthday)
     except:
@@ -174,7 +176,7 @@ def user_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-   
+
 
 
 def main():
@@ -190,7 +192,7 @@ def main():
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
-            
+
 
 
 if __name__ == "__main__":
