@@ -1,9 +1,8 @@
 ### Date created
-Include the date you created this project and README file.
-9/26/20
+The date this file was created was 9/26/20.
 
 ### bikeshare project
-This is the bikeshare project
+This is the bikeshare project.
 
 
 ### Description
