@@ -2,7 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
-#below includes bikeshare customer data from Chicago, New York City, and Washington.
+#below includes bikeshare customer data from Chicago, New York City, and Washington. These are cities in the USA.
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
