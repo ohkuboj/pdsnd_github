@@ -1,9 +1,8 @@
 ### Date created
-Include the date you created this project and README file.
-9/26/20
+The date this file was created was 9/26/20.
 
 ### bikeshare project
-Replace the Project Title
+This is the bikeshare project.
 
 
 ### Description
@@ -12,7 +11,7 @@ Project breaks down large sets of bikeshare data collected from Chicago, New Yor
 
 ### Files used
 Include the files used
-files used for this analysis were: chicago.csv, new_york_city.csv, washington.csv, and bikeshare.py.
+files used for this analysis were: chicago.csv, new_york_city.csv, washington.csv, and bikeshare.py (these are all large CSV files).
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
